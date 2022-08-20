@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ATM JS</title>
+    <style>
+       .btn {
+        width: 150px;
+        height: 30px;
+       }
+    </style>
+
+</head>
+<body>
+    <h1>JS ATM </h1>
+    <h2>Welcome</h2>
+    <p>Choose action</p>
+    <button class="btn" onclick="
+       let input_id  = +prompt('Enter ID')
+       if (input_id === client_id) {
+
+        let input_pin = +prompt('Enter PIN')
+          if (input_pin === client_pin_code) {
+            alert(`Balance: ${client_money_amount} ${client_money_currency}`)
+          } else {
+            alert('Wrong PIN Code')
+          }
+
+       } else {
+        alert('Wrong Client ID')
+
+       }
+    ">
+    CHECK FUNDS</button>
+    <br>
+
+    <button class="btn" onclick="
+    input_id = +prompt('Enter ID')
+    if (input_id === client_id) {
+        input_pin = +prompt('Enter PIN')
+            if (input_pin === client_pin_code)  {
+                let input_amount = +prompt('Enter AMOUNT')
+                let input_currency = prompt('Enter Currency')
+            if (input_currency === client_money_currency) {
+                client_money_amount += input_amount
+                alert('Success!')
+            } else {
+             alert(`Cannot process ${input_currency}`)
+            }
+            } else {
+            alert('Wrong PIN Code')
+            }
+    } else {
+        alert('Wrong CLient ID')
+
+    }
+    ">
+    TRANSFER FUNDS</button>
+    <br>
+
+    <button class="btn" onclick="
+    
+    input_id = +prompt('Enter ID')
+    if (input_id === client_id) {
+        input_pin = +prompt('Enter PIN')
+        if (input_pin === client_pin_code) {
+            let output_amount = +prompt('Enter Amount')
+            if (output_amount <= client_money_amount) {
+                let output_currency = prompt('Enter Currency')
+                if (output_currency = client_money_currency) {
+                    if (output_amount <= limit_amount) {
+                        alert('Success!')
+                        client_money_amount -= output_amount                       
+
+                    } else {
+                        alert('Limit Exceeded!')
+                    }
+
+                } else {
+                    alert(`Cannot process ${output_currency}`)
+                }
+
+            } else {
+                alert('Insufficient Funds')
+            }
+
+        } else {
+            alert('Wrong PIN Code')
+        }
+
+    } else {
+        alert('Wrong Client ID')
+    }
+
+    ">
+    
+
+    WITHDRAW FUNDS</button>
+
+
+    <script>
+        // client account data
+        let client_money_amount   = 10000
+        let client_money_currency = "EUR"
+        let client_id             = 12345678
+        let client_pin_code       = 1234
+        let limit_amount          = 5000
+
+         
+    </script>
+    
+</body>
+</html>

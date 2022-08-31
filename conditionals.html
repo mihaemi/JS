@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conditionals</title>
+</head>
+<body>
+
+    <script>
+    // 1. Write a JavaScript program that accept two integers and display the larger in the console. 
+
+        let firstInt  = +prompt('Enter the first number')
+        let secondInt = +prompt('Enxter the second number')
+
+        if(firstInt > secondInt) {
+            console.log(firstInt)
+        } else if (firstInt < secondInt) {
+            console.log(secondInt)
+        } else if (firstInt == secondInt) {
+            console.log('The numbers are equal')
+        }
+
+    // 2.  Write a JavaScript conditional statement to find the sign of product of three numbers. Display the specified sign in the console.  Sample numbers : 3, -7, 2
+
+        a = 3
+        b = -7
+        c = 2
+
+        if (a >0 && b>0 && c>0) {
+            console.log('The sign is +')
+        } else if(a >0 && b<0 && c<0) {
+            console.log('The sign is +')
+        } else if(a <0 && b>0 && c<0) {
+            console.log('The sign is +')
+        } else if(a <0 && b<0 && c>0) {
+            console.log('The sign is +')
+        } else {
+            console.log('The sign is -')
+        }
+
+     // 3.  Write a JavaScript conditional statement to sort three numbers. Display the result in the console. Sample numbers : 0, -1, 4
+
+        x = 0
+        y = -1
+        z = 4
+
+        if(x>y && x>z) {
+            if(y>z) {
+                console.log(x + ',' + y + ',' + z)
+            } else {
+                console.log(x + ',' + z + ',' + y)
+            }
+        } else if(y>x && y>z) {
+            if(x>z) {
+                console.log(y + ',' + x + ',' + z)
+            } else {
+                console.log(y + ',' + z + ',' + x)
+            }
+        } else if(z>x && z>y) {
+            if(x>y) {
+                console.log(z + ',' + x + ',' + y)
+            } else {
+                console.log(z + ',' + y + ',' + x)
+            }
+        }
+
+
+    // 4. Write a JavaScript conditional statement to find the largest of five numbers.Display the result in the console. Sample numbers : -5, -2, -6, 0, -1
+
+        a = -5
+        b = -2
+        c = -6
+        d = 0
+        e = -1
+    
+        if(a>b && a>c && a>d && a>e) {
+            console.log(a)
+        } else if(b>a && b>c && b>d && b>e) {
+            console.log(b)
+        } else if(c>a && c>b && c>d && c>e) {
+            console.log(c)
+        } else if(d>a && d>b && d>c && d>e) {
+            console.log(d) 
+        } else if(e>a && e>b && e>c && e>d) {
+            console.log(e)
+        }
+
+    </script>
+    
+</body>
+</html>

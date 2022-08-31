@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Race Day</title>
+</head>
+<body>
+    <script>
+        let raceNumber  = Math.floor(Math.random() * 1000)
+        let earlyRegist = true
+        let runnerAge   = 25
+
+
+        if (runnerAge >= 18 && earlyRegist === true) {
+            raceNumber +=1000
+
+        } if(runnerAge >= 18 && earlyRegist === true) {
+            console.log(`Race starts at 9:30 am. your race number is: ${raceNumber}`)
+
+        } else if(runnerAge >= 18 && earlyRegist === false) {
+            console.log(`Race starts at 11:00 am. Your race number is: ${raceNumber}`)
+        } else if (runnerAge <18) {
+            console.log(`Race starts at 12:30 pm. Your race number is: ${raceNumber}`)
+        }
+
+    </script>
+</body>
+</html>

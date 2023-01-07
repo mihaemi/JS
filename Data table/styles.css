@@ -1,0 +1,27 @@
+header,
+section,
+footer {
+    border: 1px solid #999;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.data-table {
+    font-family: sans-serif;
+    border: 1px solid #888;
+    border-collapse: collapse;
+}
+
+.data-table td {
+    border: 1px solid #aaa;
+    padding: 1em;
+}
+
+.data-table td input {
+    width: 100%;
+}
+
+.data-table td button {
+    border: 1px solid #aaa;
+    padding:.5em;
+}

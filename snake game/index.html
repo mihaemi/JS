@@ -1,0 +1,45 @@
+<!-- 
+PROJECT:
+    CSS:
+    * sprite
+
+    JS:
+    * Hierarchy (parent>child components)
+    * Composition
+
+   1. Components:
+     - Map, Snake (Head+Segments+Tail), Mouse, Mine... etc
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/game/map.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body onkeydown="userAction(event)">
+    <div id="container">
+        <!-- the game will render here -->
+
+    </div>
+
+    <!-- Snake component -->
+    <script src="JS/snake/head.js"></script>
+    <script src="JS/snake/snake.js"></script>
+    <script src="JS/snake/body.js"></script>
+    <script src="JS/snake/tail.js"></script>
+    <!-- Snake component -->
+
+    <!-- Map component -->
+    <script src="JS/game/map.js"></script>
+    <!-- Map component -->
+
+    <!-- Apple component -->
+    <script src="JS/apple/apple.js"></script>
+    <!-- Apple component -->
+
+    <script src="JS/app.js"></script>
+</body>
+</html>
